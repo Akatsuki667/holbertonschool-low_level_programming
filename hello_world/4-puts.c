@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/*use function puts to print characters */
+/*
+ *use function puts to print characters
+ */
 
 int main(void)
 {
