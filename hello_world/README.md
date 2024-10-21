@@ -1,0 +1,6 @@
+Do the tasks of the project "Basics on C"
+
+TASKS :
+
+ 0-preprocessor : Write a script that runs a C file through the preprocessor and save the result into another file.
+
