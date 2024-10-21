@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- *use function puts to print characters
+ * main - description
+ * Description: use function puts to print characters
+ * Return: 0 for success
  */
 
 int main(void)
