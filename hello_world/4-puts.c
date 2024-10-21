@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *use function puts to print characters
  */
 
