@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void)
+{
+char aplhabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+putchar(alphabet)
+}
+return (0);
+}
