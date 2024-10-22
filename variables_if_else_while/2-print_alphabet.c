@@ -11,7 +11,7 @@ char alphabet;
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 putchar(alphabet);
-printf("abcdefghijklmnopqrstuvwxyz\n");
+putchar('\n');
 }
 return (0);
 }
