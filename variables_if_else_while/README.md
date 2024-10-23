@@ -1,4 +1,4 @@
-Do the tasks of the project "Basics on C"
+Do the tasks of the project "C-Variables, if, else, while"
 
 TASKS :
 
