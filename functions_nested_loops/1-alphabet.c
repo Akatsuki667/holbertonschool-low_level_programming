@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
- * main - check the code
  * print_alphabet - description
  * Return: Always 0.
  */
