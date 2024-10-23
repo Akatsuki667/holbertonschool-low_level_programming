@@ -2,8 +2,6 @@
 
 /**
  * print_alphabet - description
- * print_alphabet_x10 - description
- * Return: Always 0.
  */
 
 void print_alphabet(void)
@@ -15,6 +13,9 @@ _putchar(c);
 }
 _putchar('\n');
 }
+
+/* print_alphabet_x10 - description */
+
 void print_alphabet_x10(void)
 {
 int i;
