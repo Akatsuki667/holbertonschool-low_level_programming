@@ -14,7 +14,12 @@ _putchar(c);
 _putchar('\n');
 }
 
-/* print_alphabet_x10 - description */
+/**
+ * print_alphabet_x10 - imprime l'alphabet en minuscules 10 fois
+ *
+ * Cette fonction appelle la fonction print_alphabet() 10 fois
+ * pour imprimer l'alphabet suivi d'un retour à la ligne.
+ */
 
 void print_alphabet_x10(void)
 {
