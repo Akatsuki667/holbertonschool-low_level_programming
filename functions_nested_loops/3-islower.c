@@ -8,6 +8,7 @@
 int _islower(int c)
 {
 if (c >= 97 && c <= 122)
+/* 97 / 122 : correspondance lettre miniscule dans la table ASCII */
 {
 return (1);
 /* lowercase character */

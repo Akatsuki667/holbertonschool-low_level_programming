@@ -8,6 +8,7 @@
 int _isalpha(int c)
 {
 if (c >= 65 && c <= 90)
+/* 65 / 90 : correspondance lettre majuscule table ASCII */
 {
 return (1);
 }

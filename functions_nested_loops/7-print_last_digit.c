@@ -9,9 +9,9 @@ int print_last_digit(int i)
 int last_digit = i % 10;
 /* Calcule le dernier chiffre de i */
 if (last_digit < 0)
-/* Assure que last_digit est positif */
 {
 last_digit = -last_digit;
+/* Assure que last_digit est positif */
 }
 _putchar(last_digit + '0');
 /* Affiche le dernier chiffre comme un caractère */
