@@ -5,7 +5,7 @@
  * Return: Always 0.
  */
 void print_triangle(int size)
-/* size = hauteur te largeur triangle */
+/* size = hauteur et largeur triangle */
 {
 int x, y = 0;
 /* x/y = compteur de boucle */
