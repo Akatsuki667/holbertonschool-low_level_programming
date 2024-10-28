@@ -5,7 +5,9 @@
 void more_numbers(void)
 {
 int i;
+/* variable stockera itération de x pour l'afficher */
 int x;
+/* variable stocker itération suite de nb */
 for (i = 0; i < 10; i++)
 /* boucle externe : itère 10x pour affichage */
 {

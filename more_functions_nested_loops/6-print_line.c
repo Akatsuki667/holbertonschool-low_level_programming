@@ -13,7 +13,7 @@ if (n > 0)
 /* condition : n supérieur à 0, exécution du code */
 {
 while (x < n)
-/*boucle qui itère tant que x est inférieur à n */
+/* boucle qui itère tant que x est inférieur à n */
 /* permet la répéttion d'affichage char */
 {
 _putchar('_');
