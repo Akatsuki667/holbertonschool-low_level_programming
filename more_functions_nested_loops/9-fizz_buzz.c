@@ -25,12 +25,17 @@ printf("Fizz ");
 else if (i % 5 == 0)
 /* condition multiple de 5 */
 {
-printf("Buzz ");
+printf("Buzz");
 /* affiche Buzz au lieu du nb */
 }
 else
 {
 printf("%d ", i);
+}
+if (i < 100)
+/* condition pour ne pas ajouter d'espace au dernier buzz */
+{
+printf(" ");
 }
 }
 return (0);
