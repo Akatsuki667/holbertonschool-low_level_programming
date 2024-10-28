@@ -30,7 +30,7 @@ printf("Buzz");
 }
 else
 {
-printf("%d ", i);
+printf("%d", i);
 }
 if (i < 100)
 /* condition pour ne pas ajouter d'espace au dernier buzz */
