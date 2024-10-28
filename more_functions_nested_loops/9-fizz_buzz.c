@@ -13,24 +13,24 @@ for (i = 0; i <= 100; i++)
 if (i % 3 == 0)
 /* condition si multiple de 3 */
 {
-printf("Fizz");
+printf("Fizz ");
 /* affiche Fizz au lieu du nb */
 }
 else if (i % 5 == 0)
 /* condition simultiple de 5 */
 {
-printf("Buzz");
+printf("Buzz ");
 /* affiche Buzz au lieu du nb */
 }
 else if (i % 3 == 0 && i % 5 == 0)
 /* condition multiple de 3 et 5 */
 {
-printf("FizzBuzz");
+printf("FizzBuzz ");
 /* affiche FizzBuzz au lieu du nb */
 }
 else
 {
-printf("%d", i);
+printf("%d ", i);
 }
 }
 return (0);
