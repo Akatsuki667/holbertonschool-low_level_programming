@@ -10,3 +10,5 @@ TASKS :
 -Returns 1 if c is a digit
 -Returns 0 otherwise
 
+2-mul.c : Write a function that multiplies two integers.
+
