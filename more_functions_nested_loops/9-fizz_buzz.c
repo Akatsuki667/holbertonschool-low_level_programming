@@ -13,13 +13,13 @@ for (i = 1; i <= 100; i++)
 if (i % 3 == 0 && i % 5 == 0)
 /* condition si multiple de 3 ET 5 */
 {
-printf("FizzBuzz ");
+printf("FizzBuzz");
 /* affiche FizzBuzz au lieu du nb */
 }
 else if (i % 3 == 0)
 /* condition si multiple de 3 */
 {
-printf("Fizz ");
+printf("Fizz");
 /* affiche Fizz au lieu du nb */
 }
 else if (i % 5 == 0)
