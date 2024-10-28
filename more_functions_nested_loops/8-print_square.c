@@ -8,7 +8,7 @@ void print_square(int size)
 {
 int x = 0;
 /* x = compteur des lignes */
-int y;
+int y = 0;
 /* compteur colonnes, rénitialisé à chaque nouvelle ligne */
 if (size > 0)
 {
