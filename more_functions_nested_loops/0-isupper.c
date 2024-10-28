@@ -8,6 +8,7 @@ int _isupper(int c)
 {
 if (c >= 65 && c <= 90)
 /* condition vérifiant que c une majsucule */
+/* 65/90 : valeur ASCII lettre majuscule */
 {
 return (1);
 /* si la condition est vrai elle retourne 1 */
