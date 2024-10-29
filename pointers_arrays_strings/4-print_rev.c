@@ -15,7 +15,7 @@ while (s[reverse] != '\0')
 {
 reverse++;
 }
-for (i = reverse -1; i >= 0; i--)
+for (i = reverse - 1; i >= 0; i--)
 /* affichage reverse */
 {
 _putchar(s[i]);
