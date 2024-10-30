@@ -7,12 +7,16 @@
 void puts2(char *str)
 {
 int i = 0;
+int len = 0;
 /* permet l'imitation de l'index, évite prise en compte valeur parasite */
-while (str[i] != '\0')
+while (str[len] != '\0')
 {
-_putchar(str[i]);
+len++;
+}
+while (i < len)
+{
+_putchar(i[len])
 i += 2;
-/* incrémente de 2 pour affichage un caractère sur 2*/
 }
 _putchar('\n');
 }
