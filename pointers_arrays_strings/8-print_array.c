@@ -12,12 +12,11 @@ int i;
 for (i = 0; i < n; i++)
 /* parcours premiers éléments tableau */
 {
-if (i == n - 1)
-printf("%d\n", a[i]);
+printf("%d", a[i]);
+if (i < n - 1)
 /* condition vérifiant si a[i] est le dernier élément */
 /* permettant d'afficher le dernier chiffre sans virgule */
-else
-printf("%d, ", a[i]);
+printf(", ");
 }
 printf("\n");
 }
