@@ -9,7 +9,7 @@ void rev_string(char *s)
 int left = 0;
 /* représente index du premier carcatère */
 int right = 0;
-/* représente indes du dernier caractère */
+/* représente index du dernier caractère */
 while (s[right] != '\0')
 {
 right++;
