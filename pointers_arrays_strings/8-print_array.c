@@ -15,7 +15,7 @@ for (i = 0; i < n; i++)
 printf("%d", a[i]);
 if (i < n - 1)
 /* condition vérifiant si a[i] est le dernier élément */
-/* permettant d'afficher le dernier chiffre sans virgule */
+/* ajouter une virgule et un espace pour tous les éléments sauf le dernier */
 printf(", ");
 }
 printf("\n");
