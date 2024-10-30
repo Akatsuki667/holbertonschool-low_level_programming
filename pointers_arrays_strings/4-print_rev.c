@@ -15,6 +15,7 @@ while (s[reverse] != '\0')
 {
 reverse++;
 }
+/* boucle reconstruction fonction strlen */
 for (i = reverse - 1; i >= 0; i--)
 /* affichage reverse */
 {

@@ -4,6 +4,7 @@
  * write() : écrire des données dans un fichier ou stdout
  */
 /* _putchar - description */
+/* reconstruction de la fontion putchar */
 int _putchar(char c)
 {
 return write(1, &c, 1);
