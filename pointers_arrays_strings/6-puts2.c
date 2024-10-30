@@ -6,9 +6,11 @@
  */
 void puts2(char *str)
 {
-while (*str != '\0')
+int i = 0;
+/* permet l'imitation de l'index, évite prise en compte valeur parasite */
+while (str[i] != '\0')
 {
-_putchar(*str);
+_putchar(str[i]);
 str += 2;
 /* incrémente de 2 pour affichage un caractère sur 2*/
 }
