@@ -6,7 +6,7 @@
  */
 void puts_half(char *str)
 {
-char *right_bound = str
+char *right_bound = str;
 char *left_bound = str;
 /* pointeur assignation de adresse mémoire str */
 while (*right_bound != '\0')
