@@ -23,5 +23,5 @@ return (sign_bit == 1 ? 2147483647 : -2147483648);
 number = (number * 10) + (*s - '0');
 s++;
 }
-return (sign_bit * number);
+return (sign_bit *number);
 }
