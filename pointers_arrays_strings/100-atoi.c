@@ -1,40 +1,27 @@
 #include "main.h"
 /**
- * _atoi - description
- * @s: description
- * Return: nb
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
-int sign = 1;
-/* déclaration varibale récuperation sign */
-/* 1 : pour récupérer nb positif */
-int num = 0;
-/* variable récupération de nb */
-int i;
-/* index itération *s */
-int j;
-int check = 0;
-for (i = 0; s[i] != '\0'; i++)
+int sign_bit = 1, number = 0;
+while (*s && (*s < '0' || *s > '9'))
 {
-if (s[i] >= '0' && s[i] <= '9')
-check = 1;
-else if (check == 1)
-break;
-if (s[i] == '-')
-sign = sign * (-1);
+if (*s == '-')
+sign_bit = -sign_bit;
+s++;
 }
-check = 0;
-for (j = 0; s[j] != '\0'; j++)
+while (*s >= '0' && *s <= '9')
 {
-if (s[j] >= '0' && s[j] <= '9')
+if (number > (2147483647 - (*s - '0')) / 10)
 {
-check = 1;
-num = num * 10 + s[j] - '0';
+return (sign_bit == 1 ? 2147483647 : -2147483648);
 }
-else if (check == 1)
-break;
+number = (number * 10) + (*s - '0');
+s++;
 }
-return (num *sign);
-/* retourner le nb */
+return (sign_bit * number);
 }
