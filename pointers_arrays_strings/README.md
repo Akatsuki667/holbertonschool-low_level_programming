@@ -31,3 +31,5 @@ TASKS :
 100-atoi.c : Write a function that convert a string to an integer.
 
 0-strcat.c : Write a function that concatenates two strings.
+
+1-strncat.c : Write a function that concatenates two strings.
