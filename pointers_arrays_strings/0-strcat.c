@@ -11,7 +11,7 @@ char *ptr = dest;
 /* pointeur début de chaîne de carcatère */
 while (*dest != '\0')
 dest++;
-while(*src != '\0')
+while (*src != '\0')
 {
 *dest = *src;
 /* affectation caractère pointé par src à la position courante dest */
