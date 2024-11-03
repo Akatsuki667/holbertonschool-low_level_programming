@@ -28,3 +28,6 @@ TASKS :
 9-strcpy.c : Write a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
 - Return value: the pointer to dest
 
+100-atoi.c : Write a function that convert a string to an integer.
+
+0-strcat.c : Write a function that concatenates two strings.
