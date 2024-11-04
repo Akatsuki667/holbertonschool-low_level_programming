@@ -2,6 +2,8 @@ Do the task of the project "C-Pointers, arrays and strings"
 
 TASKS :
 
+Pointers, arrays and strings
+
 0-reset_to_98.c : Write a function that takes a pointer to an int as parameter and updates the value it points to to 98
 
 1-swap.c : Write a function that swaps the values of two integers.
@@ -30,6 +32,9 @@ TASKS :
 
 100-atoi.c : Write a function that convert a string to an integer.
 
+
+More pointers, arrays and strings
+
 0-strcat.c : Write a function that concatenates two strings.
 
 1-strncat.c : Write a function that concatenates two strings.
@@ -50,3 +55,12 @@ TASKS :
 - Letters o and O should be replaced by 0
 - Letters t and T should be replaced by 7
 - Letters l and L should be replaced by 1
+
+
+Even more pointers, arrays and strings
+
+0-memset.c : Write a function that fills memory with a constant byte.
+- The _memset() function fills the first n bytes of the memory area pointed to by s with the constant byte b
+- Returns a pointer to the memory area s
+
+
