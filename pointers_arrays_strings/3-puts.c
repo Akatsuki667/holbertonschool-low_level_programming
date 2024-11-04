@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _puts - description
- * _putchar - description
- * @str: description
+ * _puts - afficher caractère
+ * _putchar - implémenter le caractère
+ * @str: string à afficher
  */
 void _puts(char *str)
 {

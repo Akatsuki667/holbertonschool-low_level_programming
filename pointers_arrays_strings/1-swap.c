@@ -9,6 +9,6 @@ void swap_int(int *a, int *b)
 int x = *a;
 /* variable temporaire = sauvegarde valeur intiale avant modification */
 *a = *b;
-/* affecte valeur pointée par b à l'meplacemnt pointée par a */
+/* affecte valeur pointée par b à l'emplacemnt pointée par a */
 *b = x;
 }

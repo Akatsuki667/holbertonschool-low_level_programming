@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_rev - description
- * _putchar - description
- * @s: description
+ * print_rev - reverse string
+ * _putchar - print un carcatère
+ * @s: paramètre fonction que l'on va reverse
  */
 void print_rev(char *s)
 {
@@ -18,6 +18,7 @@ reverse++;
 /* boucle reconstruction fonction strlen */
 for (i = reverse - 1; i >= 0; i--)
 /* affichage reverse */
+/* reverse - 1 pour se mettre au caractère précédent le caractère NULL*/
 {
 _putchar(s[i]);
 /* affcihe le carcatère de l'indice [i] */

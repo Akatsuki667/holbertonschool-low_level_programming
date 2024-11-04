@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * puts2 - description
- * _putchar - description
- * @str: description
+ * puts2 - affichage un caractère sur 2 str
+ * _putchar - implémentation caractère
+ * @str: paramètre fonction
  */
 void puts2(char *str)
 {
@@ -14,7 +14,7 @@ ptr++;
 /* Déplacement pointeur jusqu'à le caracteère NULL */
 while (str <= ptr - 1)
 /* s'assurer que str pointe vers un carcatère valide */
-/* s'assurer que str ne dépasse pas le dernier carcatère réel*/
+/* s'assurer que str ne dépasse pas le dernier caractère réel*/
 {
 _putchar(*str);
 str += 2;

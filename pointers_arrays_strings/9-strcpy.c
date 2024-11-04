@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * *_strcpy - description
- * @dest: description
- * @src: description
- * Return: description
+ * *_strcpy - copie d'une src
+ * @dest: paramètre recevant la copie
+ * @src: paramètre qui va être copié
+ * Return: résultat paramètre de la copie
  */
 char *_strcpy(char *dest, char *src)
 /* *_strcpy : renvoi un tableau  */
