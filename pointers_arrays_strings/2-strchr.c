@@ -8,6 +8,7 @@
 char *_strchr(char *s, char c)
 {
 char *s_origin = s;
+/* initialisation valeur s, copie pointeur s, garder sa valeur initiaile*/
 while (*s != '\0')
 {
 if (*s == c)

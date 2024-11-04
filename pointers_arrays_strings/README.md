@@ -73,4 +73,7 @@ Even more pointers, arrays and strings
 3-strspn.c : Write a function that gets the length of a prefix substring
 - Returns the number of bytes in the initial segment of s which consist only of bytes from accept
 
+4-strpbrk.c : Write a function that searches a string for any of a set of bytes.
+-Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
 
+5-strstr.c : Write a function that locates a substring.
