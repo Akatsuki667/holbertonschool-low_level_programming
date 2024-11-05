@@ -7,8 +7,9 @@
 void _puts_recursion(char *s)
 {
 if (*s != '\0')
+/* condition de fin */
+/* vérification si caractère actuel n'est pas le caractère NULL */
 {
-/* vérification si caractère actuel n'est pas le caractère NULL*/
 _putchar(*s);
 /* afichage carcatère actuel */
 s++;
