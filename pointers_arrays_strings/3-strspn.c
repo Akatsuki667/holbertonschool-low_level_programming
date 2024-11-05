@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strspn - rechercher ensemble de carctère dans une chaîne
+ * _strspn - rechercher ensemble de caractère dans une chaîne
  * @s: segment initial
  * @accept: segment contenant même caractère que s
  * Return: total caractère en commun
