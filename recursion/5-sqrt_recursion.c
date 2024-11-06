@@ -6,7 +6,7 @@
  * Return: retourne racine carré ou -1
  */
 int sqrt_clc(int n, int r)
-/* focntion auxiliare pour calculer la racine carré de n */
+/* fonction auxiliare pour calculer la racine carré de n */
 /* n = nb dont on cherche la racine carré */
 /* r = une tentative pour racine carré qui augmente à chaque appel */
 {
