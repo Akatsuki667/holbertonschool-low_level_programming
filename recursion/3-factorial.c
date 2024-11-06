@@ -12,10 +12,11 @@ if (n == 0)
 return (1);
 /* si oui retourne 1 */
 if (n < 0)
+/* condition de sortie */
 /* vérification nb négatif */
 return (-1);
 /* si oui retourne -1 */
-/* return (-1) utilisé pour signaler une erreur ou valeuyr non défini */
+/* return (-1) utilisé pour signaler une erreur ou valeur non défini */
 return (n * factorial(n - 1));
 /* appel récursif faisant calcul principal de la factoriel */
 /* si n positif, retourne le produit de n et de factoriel(n - 1) */
