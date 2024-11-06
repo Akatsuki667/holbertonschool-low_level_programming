@@ -11,7 +11,7 @@ if (*s == '\0')
 return (0);
 /* Si caractère NULL, retourne 0*/
 else
-return (1) + _strlen_recursion(s + 1);
+return ((1) + _strlen_recursion(s + 1));
 /* appel récursif fonction */
 /* return 1 = ajoute 1 à la fonction */
 /* s+1 = déplace le pointeur */
