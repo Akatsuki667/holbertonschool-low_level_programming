@@ -7,6 +7,7 @@
 int factorial(int n)
 {
 if (n == 0)
+/* condition de sortie */
 /* vérification n égale 0 */
 return (1);
 /* si oui retourne 1 */
