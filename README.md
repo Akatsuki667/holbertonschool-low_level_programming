@@ -8,3 +8,4 @@ This project is on basics on C.
 - more_functions_neste_loops
 - pointers_arrays_strings
 - recursion
+- argc_argv
