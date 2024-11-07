@@ -18,7 +18,7 @@ while (s < origin + n)
 *s = b;
 /* remplit chaque emplacement pointé par s avec char b */
 s++;
-/* incrémente le pointeur s plour qu'il pointe vers l'emplacement suivant */
+/* incrémente le pointeur s pour qu'il pointe vers l'emplacement suivant */
 }
 return (origin);
 }
