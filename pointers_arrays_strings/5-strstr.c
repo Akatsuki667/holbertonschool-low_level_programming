@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stddef.h> /* permet uttilisation macro(define) NULL */
 /**
  * _strstr - rechercher une chaîne de caractère occurente
  * @haystack: chaîne où l'on cherche
@@ -9,16 +9,9 @@
 char *_strstr(char *haystack, char *needle)
 {
 if (*needle == '\0') /* si vide */
-return (NULL); /* retourne NULL */
-if (*haystack == '\0') /* si vide */
-return (NULL); /* retourne NULL */
-/* vérification si needle / haystack sont vide */
+return (haystack); /* retourne NULL */
 while (*haystack != '\0')
 /* parcourt haystack jusqu'au caractère NULL */
-{
-haystack++; /* incrémentation d'un caractère */
-if (*haystack == *needle)
-/* si caractère corresponde exécution bloc de code suivant*/
 {
 char *h = haystack;
 char *n = needle;
@@ -33,7 +26,8 @@ if (*n == '\0')
 /* si parcout de tout needle, signifie que needle trouvé dans haystack*/
 return (haystack);
 /* retour position actuelle */
-}
+haystack++;
+/* incrémentation, passé au caractère suivant */
 }
 return (NULL);
 /* si needle vide retourne NULL */
