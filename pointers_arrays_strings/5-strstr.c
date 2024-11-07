@@ -23,11 +23,11 @@ n++;
 /* incrémentation carcatère suivant */
 }
 if (*n == '\0')
-/* si parcout de tout needle, signifie que needle trouvé dans haystack*/
+/* si parcout de tout needle, signifie que needle trouvé dans haystack */
 return (haystack);
 /* retour position actuelle */
 haystack++;
-/* incrémentation, passé au caractère suivant */
+/* incrémentation première boucle while, passé au caractère suivant */
 }
 return (NULL);
 /* si needle vide retourne NULL */
