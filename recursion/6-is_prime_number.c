@@ -8,7 +8,7 @@
 int is_prime_helper(int n, int i)
 {
 if (i * i > n)
-/* Si i^2 dépasse n, c'est un nombre premier */
+/* Si i*i dépasse n, c'est un nombre premier */
 return (1);
 if (n % i == 0)
 /* Si n est divisible par i, ce n'est pas un nombre premier */
