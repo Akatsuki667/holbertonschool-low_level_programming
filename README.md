@@ -9,3 +9,4 @@ This project is on basics on C.
 - pointers_arrays_strings
 - recursion
 - argc_argv
+- malloc_free
