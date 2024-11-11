@@ -19,7 +19,7 @@ array = malloc(size * sizeof(char));
 /* allocation mémoire de taille size et de type char*/
 if (array == NULL)
 return (NULL);
-/* vérification allocation mémoire n'a pas échoué*/
+/* vérification allocation mémoire n'a pas échoué */
 for (i = 0; i < size; i++)
 /* parcourir chaque élément de array */
 array[i] = c;

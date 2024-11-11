@@ -23,9 +23,8 @@ len_j++;
 s_cnct = malloc((len_i + len_j + 1) * sizeof(char));
 /*  allocation mémoire concaténation */
 /* len_i/j + 1 = inclure espace pour '\0' */
-if (s_cnct == NULL)
-return (NULL);
-/* vérification échec malloc */
+if (s_cnct == NULL) /* vérification échec malloc */
+return (NULL); /* échec malloc */
 for (i = 0; i < len_i; i++)
 s_cnct[i] = s1[i];
 /* copie caractère s1 dans s_cnct */

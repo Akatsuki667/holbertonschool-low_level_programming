@@ -18,9 +18,8 @@ for (len = 0; str[len] != '\0'; len++);
 cp_str = malloc((len + 1) * sizeof(char));
 /* allocation dynamique mémoire copie str */
 /* len + 1 = inclure espace nécessaire pour '\0' */
-if (cp_str == NULL)
-return (NULL);
-/* vérification échec malloc */
+if (cp_str == NULL)/* vérification échec malloc */
+return (NULL);/* échec malloc */
 for (i = 0; i < len; i++)
 /* boucle copie caractère, parcourir len */
 cp_str[i] = str[i];
