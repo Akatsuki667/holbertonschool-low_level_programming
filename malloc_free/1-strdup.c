@@ -8,7 +8,7 @@
 char *_strdup(char *str)
 {
 char *cp_str; /* pointeur mémoire alloué copie str */
-int i; /* index bouvle copie */
+int i; /* index boucle copie */
 int len; /* stokera longueur str, déterminer espace mémoire allouer */
 if (str == NULL)
 return (NULL);
