@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdlib.h"
+#include <stdlib.h>
 /**
  * create_array - création tableau et alocation mémoire tableau
  * @size: taille du tableau
