@@ -15,7 +15,7 @@ unsigned int i;
 if (size == 0)
 return (NULL);
 /* vérification size, évite d'allouer de la mémoire inutilement */
-array = malloc(size * sizeof(char));
+array = (char*)malloc(size * sizeof(char));
 /* allocation mémoire de taille size et de type char*/
 if (array == NULL)
 return (NULL);
