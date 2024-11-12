@@ -13,7 +13,7 @@ int len; /* stokera longueur str, déterminer espace mémoire allouer */
 if (str == NULL)
 return (NULL);
 /* vérification str NULL, inutile de dupliquer chaîne NULL*/
-for (len = 0; str[len] != '\0'; len++);
+for (len = 0; str[len] != '\0'; len++)
 /* contient nb caractères sans compter '\0' */
 cp_str = malloc((len + 1) * sizeof(char));
 /* allocation dynamique mémoire copie str */
