@@ -17,5 +17,5 @@ exit(98);
 /* fin d'exécution */
 /* code de sortie -> 98 */
 return (array);
-/*  retour pointeur adresse mémoire */
+/*  retour pointeur allocation mémoire */
 }
