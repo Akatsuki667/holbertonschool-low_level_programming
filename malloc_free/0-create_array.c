@@ -20,9 +20,12 @@ array = malloc(size * sizeof(char));
 if (array == NULL)
 return (NULL);
 /* vérification allocation mémoire n'a pas échoué */
-for (i = 0; i < size; i++) /* parcourir chaque élément de array */
+for (i = 0; i < size; i++)
+/* parcourir chaque élément de array */
+{
 array[i] = c;
-/* remplir place alloué avec c*/
+/* remplir place alloué avec c */
+}
 return (array);
 /* retourne pointeur tableau alloué et rempli */
 }
