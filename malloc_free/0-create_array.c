@@ -3,7 +3,7 @@
 /**
  * create_array - création tableau et alocation mémoire tableau
  * @size: taille du tableau
- * @c: nb de caractère
+ * @c: caractère d'initialisation
  * Return: le tableau
  */
 char *create_array(unsigned int size, char c)
@@ -20,8 +20,7 @@ array = malloc(size * sizeof(char));
 if (array == NULL)
 return (NULL);
 /* vérification allocation mémoire n'a pas échoué */
-for (i = 0; i < size; i++)
-/* parcourir chaque élément de array */
+for (i = 0; i < size; i++) /* parcourir chaque élément de array */
 array[i] = c;
 /* remplir place alloué avec c*/
 return (array);
