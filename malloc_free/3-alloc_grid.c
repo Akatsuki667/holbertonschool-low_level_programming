@@ -26,15 +26,14 @@ ar[i] = (int *)malloc(width * sizeof(int));
 /* (int *) conversion type malloc en int */
 if (ar[i] == NULL) /* vérification chaque alloc mémoire */
 {
-while (i > 0)
+while (i > 0) /* boucle de vérification échec malloc */
 /* parcourir mémoire alloué */
 free(ar[--i]); /* libération mémoire lignes */
 free(ar); /* libération mémoire tableau */
 return (NULL); /* échec malloc */
 }
 for (j = 0; j < width; j++)
-ar[i][j] = 0;
+ar[i][j] = 0; /* initialisation chaque élément tableau à 0 */
 }
-/* initialisation chaque élément tableau à 0 */
 return (ar);
 }

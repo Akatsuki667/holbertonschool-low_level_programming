@@ -24,7 +24,7 @@ for (i = 0; i < len; i++)
 /* boucle copie caractère, parcourir len */
 cp_str[i] = str[i];
 /* à chaque itération str[i] copie dans cp_str[i] */
-cp_str[len] = '\0'; /* ajout caractère NULL */
+cp_str[i] = '\0'; /* ajout caractère NULL */
 /* marquer fin de la chaîne */
 return (cp_str);
 /* retourne pointeur vers copie allouer dynamiquement */
