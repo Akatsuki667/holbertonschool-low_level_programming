@@ -23,7 +23,7 @@ len_j++;
 /* boucles while, calcul longueur string */
 if (n >= len_j) /* vérification n supérieur ou égal*/
 n = len_j; /* si condition vrai mettre toute la string*/
-s_cnct = malloc((len_i + len_j + 1) * sizeof(char));
+s_cnct = malloc((len_i + n + 1) * sizeof(char));
 /*  allocation mémoire concaténation */
 /* len_i/j + 1 = inclure espace pour '\0' */
 if (s_cnct == NULL) /* vérification échec malloc */

@@ -27,7 +27,7 @@ for (i = 0; i < calcul; i++)
 array[i] = min++;
 /* affectation valeur à chaque position i dans array */
 /* array[i] = cible position dans array */
-/* min + 1 = calcul valeur à stocker */
+/* min++ = incrémentation de min */
 return (array);
 /* retour pointeur vers début tableau int */
 }
