@@ -24,7 +24,7 @@ return (NULL);
 /* échec malloc retour fonction NULL */
 for (i = 0; i < calcul; i++)
 /* initialisation/vérification/MAJ index i à chaque itération */
-array[i] = min + 1;
+array[i] = min++;
 /* affectation valeur à chaque position i dans array */
 /* array[i] = cible position dans array */
 /* min + 1 = calcul valeur à stocker */
