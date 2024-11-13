@@ -10,3 +10,4 @@ This project is on basics on C.
 - recursion
 - argc_argv
 - malloc_free
+- structures_typedef
