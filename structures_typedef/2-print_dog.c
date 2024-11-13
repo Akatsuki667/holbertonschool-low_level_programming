@@ -7,7 +7,7 @@
  */
 void print_dog(struct dog *d)
 {
-if (d == NULL) /* vérification paramèttre valide */
+if (d == NULL) /* vérification paramètre valide */
 return; /* fin programme */
 if (d->name == NULL)
 printf("Name: (nil)\n");
