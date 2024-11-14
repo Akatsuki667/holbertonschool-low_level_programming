@@ -15,6 +15,7 @@ return (NULL);
 /* vérification str NULL, inutile de dupliquer chaîne NULL*/
 for (len = 0; str[len] != '\0'; len++)
 /* contient nb caractères sans compter '\0' */
+;
 cp_str = malloc((len + 1) * sizeof(char));
 /* allocation dynamique mémoire copie str */
 /* len + 1 = inclure espace nécessaire pour '\0' */
