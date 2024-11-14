@@ -14,15 +14,16 @@ if (width <= 0 || height <= 0)
 return (NULL);
 /* vérification paramètres valide */
 ar = (int **)malloc(height * sizeof(int *));
-/* allocation mémoire colonnes */
+/* allocation mémoire lignes */
 /* (int **) conversion type malloc en int */
 /* chaque éléments ar sera un pointeur vers une ligne (colonnes) */
 if (ar == NULL) /* vérification échec malloc */
 return (NULL); /* échec malloc */
-for (i = 0; i < height; i++) /* boucle allocation mémoire ligne */
+for (i = 0; i < height; i++) /* boucle allocation mémoire colonnes */
 {
 ar[i] = (int *)malloc(width * sizeof(int));
-/* allocation mémoire lignes*/
+/* allocation mémoire colonnes */
+/* ar[i] = chaque élément pointeur height création colonnes width */
 /* (int *) conversion type malloc en int */
 if (ar[i] == NULL) /* vérification chaque alloc mémoire */
 {

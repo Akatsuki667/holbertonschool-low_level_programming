@@ -11,3 +11,7 @@ dog.h : Define a new type struct dog with the following elements:
 - If d is NULL print nothing.
 
 dog.h : Define a new type dog_t as a new name for the type struct dog.
+
+4-new_dog.c : Write a function that creates a new dog.
+- You have to store a copy of name and owner
+- Return NULL if the function fails
