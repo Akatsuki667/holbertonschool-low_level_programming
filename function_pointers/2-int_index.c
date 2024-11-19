@@ -10,7 +10,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 int i;
 /* index parcourir array */
-if (size <= 0)
+if (array == NULL || cmp == NULL || size <= 0)
 /* condition vérification validité paramètre */
 return (-1);
 /* si array vide retour valeur d'erreur */
