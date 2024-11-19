@@ -14,7 +14,7 @@ if (array == NULL || cmp == NULL || size <= 0)
 /* condition vérification validité paramètre */
 return (-1);
 /* si array vide retour valeur d'erreur */
-for (i = 0; i < size - 1; i++)
+for (i = 0; i < size; i++)
 /* parcourir indices array */
 {
 if (cmp(array[i]) != 0)
