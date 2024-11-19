@@ -1,6 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct op - Struct op
  *
@@ -10,9 +11,9 @@
 typedef struct op
 {
 char *op;
-/* pointeur stocke caractères (opérateurs de calcul) */
+/* pointeur stocke caractère (opérateurs de calcul) */
 int (*f)(int a, int b);
-/* poinnteur de fonction faisant l'opération */
+/* pointeur de fonction faisant l'opération */
 } op_t;
 /* alias struct op */
 
