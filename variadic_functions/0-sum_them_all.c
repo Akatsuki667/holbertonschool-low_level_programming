@@ -7,17 +7,17 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-if (n == 0) /* vérification validité paramètres */
+if (n == 0) /* vérification paramètre valide */
 return (0);
 va_list(ap); /* déclaration variable type va_list*/
 /* accès aux arguments variadiques */
-unsigned int i; /* index parcourir arguments */
-unsigned int sum; /* stockage somme des entiers */
+int i; /* index parcourir arguments */
+int sum; /* stockage somme des entiers */
 va_start(ap, n); /* initialisation arguments ap */
 /* indique que les arguments commence après n */
 sum = 0; /* initialisation sum pour l'accumulation */
 for (i = 0; i < n; i++) /* parcourir nb arguments variadique */
-sum += va_arg(ap, unsigned int);
+sum += va_arg(ap, int);
 /* va_arg extrait argument suivant -> ajouté à sum */
 va_end(ap); /* libération ressources utilisé par ap */
 return (sum);
