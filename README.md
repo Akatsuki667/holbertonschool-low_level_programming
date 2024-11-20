@@ -12,3 +12,4 @@ This project is on basics on C.
 - malloc_free
 - structures_typedef
 - function_pointers
+- variadic_functions
