@@ -7,3 +7,7 @@ TASKS :
 
 1-print_numbers.c : Write a function that prints numbers, followed by a new line.
 - If separator is NULL, don’t print it
+
+2-print_strings.c : Write a function that prints strings, followed by a new line.
+- If separator is NULL, don’t print it
+- If one of the string is NULL, print (nil) instead

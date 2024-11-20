@@ -7,7 +7,7 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-va_list(ap); /* déclaration variable type va_list */
+va_list ap; /* déclaration variable type va_list */
 unsigned int i; /* index parcourir arguments */
 unsigned int sum; /* stockage somme des entiers */
 if (n == 0) /* vérification paramètre valide */

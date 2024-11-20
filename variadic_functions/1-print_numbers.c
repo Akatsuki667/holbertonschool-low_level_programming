@@ -2,12 +2,12 @@
 /**
  * print_numbers - afficher série de nb entiers séparés par un délimiteur
  * @separator: délimiteur donné
- * @n: nb entiers qui seront passés comme arguments
+ * @n: nb qui seront passés comme arguments
  * @...: arguments supplémentaires à traiter
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-va_list(ap); /* déclaration variable de type va_list */
+va_list ap; /* déclaration variable de type va_list */
 unsigned int i; /* index parcourir arguments */
 if (n == 0) /* vérification paramètre valide */
 return; /* retour fonction */
