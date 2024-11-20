@@ -9,8 +9,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list(ap); /* déclaration variable de type va_list */
 unsigned int i; /* index parcourir arguments */
-if (n == 0) /* vérification paramètre valide */
-return; /* retour fonction */
 va_start(ap, n); /* initialisation arguments */
 /* indique les arguments commence après n */
 for (i = 0; i < n; i++) /* parcourir arguments variadiques */
