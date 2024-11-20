@@ -7,6 +7,8 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
+if (n == 0) /* vérification validité paramètres */
+return (0);
 va_list(ap); /* déclaration variable type va_list*/
 /* accès aux arguments variadiques */
 unsigned int i; /* index parcourir arguments */
