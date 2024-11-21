@@ -21,7 +21,7 @@ if (separator != NULL && i > 0) /* condition affichage séparateur */
 printf("%s", separator); /* affichage séparateur après première string */
 s = va_arg(ap, char*); /* récupération argument suivant  */
 if (s == NULL) /* vérification validité de la string */
-printf("(nil)"); /* affichage erreur*/
+printf("(nil)");/* affichage erreur */
 printf("%s", s); /* affichage pointeur contenant string argument */
 }
 printf("\n");/* retour à la ligne */
