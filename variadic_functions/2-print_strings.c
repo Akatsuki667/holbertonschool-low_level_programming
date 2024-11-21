@@ -7,23 +7,40 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-va_list ap; /* déclaration variable de type va_list */
-unsigned int i; /* index parcourir arguments */
-char *s; /* stockage string argument */
-if (n == 0) /* vérification validité paramètre */
-return; /* retour de fonction */
-va_start(ap, n); /* initialisation arguments */
-/* indique arguments commence après n */
-for (i = 0; i < n; i++) /* parcourir argument variadique */
+unsigned int i;
+/* déclare variable i pr tt les args variadiques for */
+va_list args;
+/* gere les arguments passés à la fonction*/
+va_start(args, n);
+/*initialisation variable args pour traiter les args */
+/* elle prend en arg le dernier para (n)*/
+for (i = 0; i < n; i++)
+/* boucle*/
 {
-if (separator != NULL && i > 0) /* condition affichage séparateur */
-/* i == 0 pas de séparateur va de suite seconde instruction */
-printf("%s", separator); /* affichage séparateur après première string */
-s = va_arg(ap, char*); /* récupération argument suivant  */
-if (s == NULL) /* vérification validité de la string */
-printf("(nil)");/* affichage erreur */
-printf("%s", s); /* affichage pointeur contenant string argument */
+const char *str = va_arg(args, const char *);
+/*extrait prochain elt de la liste */
+/* arg de type const char * (chaine de caracteres*/
+/* resultat stocké dans str*/
+if (str == NULL)
+/* si arg null = nil */
+{
+printf("(nil)");
+/* si str null nil à la place */
 }
-printf("\n");/* retour à la ligne */
-va_end(ap); /* libération ressource ap */
+else
+{
+printf("%s", str);
+/* si str est valide alors affiche chaine de caracteres*/
+}
+if (separator != NULL && i < n - 1)
+/* verifie si separator pas NULL*/
+/* verifie si i pas dernier indice (pas sep après dernier arg)*/
+/* si deux condi vraies on affiche le sep*/
+{
+printf("%s", separator);
+/*si c'est vrai on affiche le sep + nouvelle ligne à la fin de sortie*/
+}
+}
+printf("\n");
+va_end(args);
 }
