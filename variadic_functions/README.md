@@ -11,3 +11,5 @@ TASKS :
 2-print_strings.c : Write a function that prints strings, followed by a new line.
 - If separator is NULL, don’t print it
 - If one of the string is NULL, print (nil) instead
+
+3-print_all.c : Write a function that prints anything.

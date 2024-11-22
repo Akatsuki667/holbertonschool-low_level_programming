@@ -1,7 +1,21 @@
 #ifndef VARIADIC_FUNCTION
 #define VARIADIC_FUNCTION
+
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * struct print - structure associant un format et une fonction de
+ * affichage
+ * @type: Le type d'argument
+ * @f: La fonction associée pour afficher ce type d'argument
+ */
+typedef struct print
+{
+    char *type;
+    void (*f)(va_list args);
+} print_type;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
