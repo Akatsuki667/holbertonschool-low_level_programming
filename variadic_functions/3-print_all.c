@@ -89,4 +89,6 @@ j = 0;
 i++;
 }
 printf("\n");
-va
+va_end(args);
+}
+
