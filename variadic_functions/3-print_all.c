@@ -6,8 +6,10 @@
  */
 void print_char(va_list args)
 {
-char c;
+char c; /* stockage caractère extrait arguments variadiques */
 c = va_arg(args, int);
+/* extraction prochain argument de type int list args */
+/* char automatiqument promu à un int (promotion artihmétiques) */
 printf("%c", c);
 }
 /**
@@ -30,6 +32,8 @@ void print_float(va_list args)
 {
 float f;
 f = va_arg(args, double);
+/* extraction prochain argument de type double list args */
+/* float automatiquement promu en double (promotion artihmétiques)*/
 printf("%f", f);
 }
 /**
@@ -50,7 +54,7 @@ return;
 printf("%s", s);
 }
 /**
- * print_all - Imprime n'importe quoi en fonction de la chaîne de format.
+ * print_all - Imprime en fonction de la chaîne de format.
  * @format: Une chaîne représentant les types d'arguments passés à la fonction.
  * 'c' pour char, 'i' pour entier, 'f' pour float, 's' pour chaîne de caractères.
  * Description: Cette fonction imprime toutes les valeurs fournies comme arguments,
@@ -68,25 +72,36 @@ print_type types[] = {
 {"s", print_string},
 {NULL, NULL}
 };
-va_list args;
-char *separator = "";
-int i = 0;
-int j = 0;
+/* déclaration struct */
+va_list args; /* liste d'arguments variadique */
+char *separator = ""; /* chîne vide -> gestion séparateurs */
+int i = 0; /* index parocurir format */
+int j = 0; /* index parcourir types*/
 va_start(args, format);
-while (format && format[i])
+/* initialisation accès arguments vaiadique */
+while (format != NULL && format[i] != '\0')
+/* vérification paramètre valide && caractère courant paramètre existe */
+/* boucle sur chaque caractère de format */
 {
 while (types[j].type)
+/* parcourir type pour trouver correspondance */
 {
 if (*types[j].type == format[i])
+/* vérification type courant correspondant au type défini dans format */
 {
 printf("%s", separator);
+/* impression séparateur avant argument */
 types[j].f(args);
+/* appel fonction associé au type courant pour l'imprimer */
 separator = ", ";
+/* change séparateur pour inclure une virgule et espaxe après le premier argument */
 }
 j++;
 }
 j = 0;
+/*  Réinitialise l’index j pour le prochain caractère de format */
 i++;
+/* Incrémente i pour passer au prochain caractère de format */
 }
 printf("\n");
 va_end(args);
