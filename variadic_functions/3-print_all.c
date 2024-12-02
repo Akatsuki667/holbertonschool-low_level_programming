@@ -74,7 +74,7 @@ print_type types[] = {
 };
 /* déclaration struct */
 va_list args; /* liste d'arguments variadique */
-char *separator = ""; /* chîne vide -> gestion séparateurs */
+char *separator = ""; /* chaîne vide -> gestion séparateurs */
 int i = 0; /* index parocurir format */
 int j = 0; /* index parcourir types*/
 va_start(args, format);

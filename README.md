@@ -13,3 +13,4 @@ This project is on basics on C.
 - structures_typedef
 - function_pointers
 - variadic_functions
+- singly_linked_lists
