@@ -7,3 +7,9 @@ TASKS :
 - If str is NULL, print [0] (nil)
 
 1-list_len.c : Write a function that returns the number of elements in a linked list_t list.
+
+ 2-add_node.c : Write a function that adds a new node at the beginning of a list_t list.
+ - Return: the address of the new element, or NULL if it failed
+ - str needs to be duplicated
+ - You are allowed to use strdup
+ 

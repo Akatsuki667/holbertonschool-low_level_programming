@@ -17,7 +17,7 @@ printf("[0] (nil)\n"); /* afficher message d'erreur */
 else
 printf("[%d] %s\n",current->len, current->str); /* affiche longueur str et contenu */
 current = current->next; /* MAJ du pointeur vers prochain noeud */
-count++; /* ajout nb de noeud liste h->next */
+count++; /* ajout nb de noeud liste current->next */
 }
 return (count); /* retourne nb de noeud liste */
 }

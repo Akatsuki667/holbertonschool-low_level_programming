@@ -12,8 +12,8 @@ if (current == NULL) /* vérification paramètres valide */
 return (-1);
 while (current != NULL) /* parcours paramètres */
 {
-current = current->next;
-count++;
+current = current->next; /* MAJ pointeur vers prochaion noeud */
+count++; /* ajout nb noeud liste current-> next */
 }
 return (count);
 }
