@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+
 /**
  * main - check the code
  *
@@ -37,3 +38,4 @@ int main(void)
     free(new);
     return (0);
 }
+

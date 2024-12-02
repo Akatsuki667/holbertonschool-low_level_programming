@@ -6,13 +6,17 @@
  */
 size_t print_list(const list_t *h)
 {
+const list_t *current = h;
 size_t count = 0; /* stockage nb de noeud dans la liste */
-while (h != NULL) /* parcours paramètres*/
+if (current == NULL) /* vérification paramètres */
+return (-1);
+while (current != NULL) /* parcours paramètres */
 {
-if (h->str == NULL) /* vérification validité paramètres */
+if (current->str == NULL) /* vérification validité paramètres */
 printf("[0] (nil)\n"); /* afficher message d'erreur */
-printf("[%d] %s\n",h->len, h->str); /* affiche longueur str et contenu */
-h = h->next; /* MAJ du pointeur vers prochain noeud */
+else
+printf("[%d] %s\n",current->len, current->str); /* affiche longueur str et contenu */
+current = current->next; /* MAJ du pointeur vers prochain noeud */
 count++; /* ajout nb de noeud liste h->next */
 }
 return (count); /* retourne nb de noeud liste */
