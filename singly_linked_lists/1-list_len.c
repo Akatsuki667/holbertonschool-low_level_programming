@@ -6,12 +6,13 @@
  */
 size_t list_len(const list_t *h)
 {
+const list_t *current = h; /* pointeur permettant l'itération */
 size_t count = 0; /* stockage nb de noeuds liste */
-if (h == NULL) /* vérification paramètres valide */
+if (current == NULL) /* vérification paramètres valide */
 return (-1);
-while (h != NULL) /* parcours paramètres*/
+while (current != NULL) /* parcours paramètres */
 {
-h = h->next;
+current = current->next;
 count++;
 }
 return (count);
