@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_node_end - création noeud 
+ * add_node_end - création noeud
  * @head: poin teur vers pointeur du premier noeud
  * @str: chaîne de caractère stocker dans le nouveau noeud
- * Return:
+ * Return: adresse nouveau noeud, ou NULL
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
