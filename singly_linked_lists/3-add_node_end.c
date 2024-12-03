@@ -14,7 +14,6 @@ new = malloc(sizeof(list_t)); /* allocation mémoire */
 if (new == NULL) /* vérification allocation */
 return (NULL);
 new->str = strdup(str); /* allocation mémoire copie str */
-new->len = _strlen(str); /* calcul longueur str */
 new->next = NULL; /* initialisation champ nouveau noeud */
 if (*head == NULL) /* vérification liste valide */
 {
