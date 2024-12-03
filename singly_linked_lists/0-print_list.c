@@ -8,8 +8,6 @@ size_t print_list(const list_t *h)
 {
 const list_t *current = h;
 size_t count = 0; /* stockage nb de noeud dans la liste */
-if (current == NULL) /* vérification paramètres */
-return (-1);
 while (current != NULL) /* parcours paramètres */
 {
 if (current->str == NULL) /* vérification validité paramètres */
