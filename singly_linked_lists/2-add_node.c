@@ -15,7 +15,6 @@ return (NULL);
 new->str = strdup(str);
 /* allocation mémoire copie str */
 /* retour pointeur copie */
-new->len = strlen(str); /* calcul longueur str */
 new->next = *head;
 /* champ du nouveau noeud qui pointe vers le premier noeud actuel */
 /* *head->pointe vers tête actuelle de la liste */
