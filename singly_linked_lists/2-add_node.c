@@ -7,18 +7,19 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *new; /* référencer nouveau noeud */
-new = malloc(sizeof(list_t)); /* allocation mémoire */
+list_t *new; /* création node */
+/* référencer nouveau noeud */
+new = malloc(sizeof(list_t)); /* allocation mémoire node */
 if (new == NULL) /* vérification allocation */
 return (NULL);
 new->str = strdup(str);
 /* allocation mémoire copie str */
 /* retour pointeur copie */
+new->len = strlen(str); /* calcul longueur str */
 new->next = *head;
 /* champ du nouveau noeud qui pointe vers le premier noeud actuel */
 /* *head->pointe vers tête actuelle de la liste */
 /* cette ligne relie le nouveau noeud à l'ancien noeud */
-new->len = strlen(str); /* calcul longueur str */
 *head = new; /* MAJ pointeur vers prochain noeud */
 return (new);
 }
