@@ -20,12 +20,6 @@ return (len);
 /* Retourne la longueur totale */
 }
 /**
- * add_node - ajout nouveau noeuds au début de la liste chaînée
- * @head: double pointeur vers noeud("tête") liste chaînée
- * @str: pointeur vers chaîne de caractère que le noeud doit stocker
- * Return: adresse nouvelle élément ou NULL
- */
-/**
  * add_node_end - création noeud
  * @head: poin teur vers pointeur du premier noeud
  * @str: chaîne de caractère stocker dans le nouveau noeud
