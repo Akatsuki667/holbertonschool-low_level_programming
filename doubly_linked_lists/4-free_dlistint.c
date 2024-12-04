@@ -5,14 +5,15 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-dlistint_t *temp; /* stocker l'adresse du noeud suivant */
-if (head == NULL) /* vérifcation paramètre valide */
+dlistint_t *next_node; /* stocker l'adresse du noeud suivant */
+dlistint_t *current = head;
+/* pointeur vers struct */
+/*-> permet itération pour ne pas perdre valeur de head */
+if (head == NULL) /* vérification paramètre valide */
 return;
-while (head != NULL)
-{
-temp = head->next; /* stockage adresse noeud suivant */
-free(head); /* libération mémoire alloué noeud */
-head = temp;
-/* passe au caractère suivant (incrémentation séquentielle) */
-}
+while (current != NULL) /* parcours liste de noeud */
+next_node = current->next; /* assignation adresse noeud suivant */
+free(current); /* libération du noeud */
+current = next_node;
+/* passer au noeud suivant (incrémentation séquentielle) */
 }
