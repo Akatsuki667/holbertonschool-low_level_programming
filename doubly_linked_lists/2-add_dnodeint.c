@@ -21,7 +21,7 @@ if (ptr != NULL) /* vérification liste non vide */
 ptr->prev = temp; /* assignation adresse mémoire */
 temp->n = n; /* assignation champ n paramètre n */
 temp->prev = NULL;
-/* assignation pointeur car premiere élément */
+/* assignation pointeur car première élément */
 temp->next = *head;
 /* assignation pointeur suivant vers adresse mémoire head */
 /* le premier élément devient le second */

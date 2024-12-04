@@ -12,3 +12,5 @@ TASKS :
 
 3-add_dnodeint_end.c : Write a function that adds a new node at the end of a dlistint_t list.
 - Return: the address of the new element, or NULL if it failed
+
+4-free_dlistint.c : Write a function that frees a dlistint_t list.

@@ -24,11 +24,11 @@ if (temp == NULL)
 /* vérification liste vide */
 {
 *head = new;
-/* si oui, assignation dernier éléménet créer devient le premier */
+/* si oui, assignation dernier élément créer devient le premier */
 return (new);
 }
 while (temp->next != NULL) /* parcours liste de noeuds */
-temp = temp->next;/* déplacement dernièr élément */
+temp = temp->next;/* déplacement dernier élément */
 temp->next = new;
 /* assignation nouveau noeuds au dernier élément */
 new->prev = temp;
