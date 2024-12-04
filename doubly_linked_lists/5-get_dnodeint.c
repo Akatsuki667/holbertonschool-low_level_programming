@@ -9,17 +9,15 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-dlistint_t *current = head; /* stockage adresse mémoire head */
-/* pointeur parcours liste de noeud */
 unsigned int current_index = 0; /* index comparaison */
 /* suivre postion actuelle */
 if (head == NULL) /* vérification paramètre valide */
 return (NULL); /*  */
-while (current != NULL) /* parcours liste de noeuds */
+while (head != NULL) /* parcours liste de noeuds */
 {
 if (current_index == index) /* vérification correspondance */
-return (current); /* retourne noeud correspondant */
-current = current->next; /* déplacement noeud suivant */
+return (head); /* retourne noeud correspondant */
+head = head->next; /* déplacement noeud suivant */
 current_index++; /* incrémentation index */
 }
 return (head);

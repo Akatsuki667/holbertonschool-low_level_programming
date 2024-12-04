@@ -21,3 +21,8 @@ TASKS :
 
 6-sum_dlistint.c : Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
 - if the list is empty, return 0
+
+7-insert_dnodeint.c : Write a function that inserts a new node at a given position.
+- Returns: the address of the new node, or NULL if it failed
+- if it is not possible to add the new node at index idx, do not add the new node and return NULL
+
