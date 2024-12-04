@@ -14,3 +14,7 @@ TASKS :
 - Return: the address of the new element, or NULL if it failed
 
 4-free_dlistint.c : Write a function that frees a dlistint_t list.
+
+5-get_dnodeint.c : Write a function that returns the nth node of a dlistint_t linked list.
+- where index is the index of the node, starting from 0
+- if the node does not exist, return NULL

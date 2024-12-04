@@ -8,7 +8,7 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 dlistint_t *temp = *head;
-/* pointeur vers adresse mémoire struct temp */
+/* pointeur vers adresse mémoire head */
 dlistint_t *new;
 /* pointeur création nouveau noeud */
 if (head == NULL) /* vérification paramètre valide */
