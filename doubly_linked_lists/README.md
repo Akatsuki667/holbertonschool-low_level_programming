@@ -18,3 +18,6 @@ TASKS :
 5-get_dnodeint.c : Write a function that returns the nth node of a dlistint_t linked list.
 - where index is the index of the node, starting from 0
 - if the node does not exist, return NULL
+
+6-sum_dlistint.c : Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
+- if the list is empty, return 0
