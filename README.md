@@ -15,3 +15,4 @@ This project is on basics on C.
 - variadic_functions
 - singly_linked_lists
 - doubly_linked_lists
+- bit_manipulation
