@@ -53,6 +53,7 @@ count_idx++; /* incrémentation index */
 new_node->n = n; /* assignation data par paramètres n */
 new_node->prev = current_node; /* assignation pointeur prev vers temp */
 new_node->next = current_node->next;
+if (current_node->next != NULL)
 /* assignation new_current pointe sur l'ancien suivant */
 current_node->next->prev = new_node;
 /* le prev noeuds suivant current devient le new */
