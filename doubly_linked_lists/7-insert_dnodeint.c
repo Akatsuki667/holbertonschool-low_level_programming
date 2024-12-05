@@ -15,8 +15,11 @@ dlistint_t *new_node; /* pointeur nouveau noeud */
 unsigned int count_idx = 0; /* compteur index liste de noeuds */
 if (h == NULL) /* vérification paramètre valide */
 return (NULL);
+
+/* insertion noeud début de liste */
 if (idx == 0) /* vérification index */
 return (add_dnodeint(h, n)); /* appel fonction ajout au début */
+
 /* insertion noeuds au milieu de liste */
 while (current_node != NULL && count_idx != idx - 1)
 /* parcours liste de noeuds */
@@ -26,6 +29,7 @@ count_idx++; /* incrémentation index */
 }
 if (current_node == NULL) /* vérification validité liste */
 return (NULL);
+/* insertion noeud fin de liste */
 if (current_node == NULL && count_idx == idx - 1)
 return (add_dnodeint_end(h, n)); /* appel fonction ajout à la fin */
 new_node = malloc(sizeof(dlistint_t)); /* allocation mémoire */
@@ -41,4 +45,3 @@ current_node->next->prev = new_node;
 current_node->next = new_node; /* next current devient le new */
 return (new_node);
 }
-
