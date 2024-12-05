@@ -8,7 +8,7 @@ void print_binary(unsigned long int n)
 unsigned long int mask = 1; /* variable test bits par bits */
 /* initialisé à 1 -> bit le moins significatif */
 int flag = 0; /* variable détection pour afficher bit significatif */
-mask <<= (sizeof(n) * 8 -1);
+mask <<= (sizeof(n) * 8 - 1);
 while (mask > 0) /* boucle test bits */
 {
 if (n & mask) /* Opération AND bit à bit */
