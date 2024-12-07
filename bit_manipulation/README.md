@@ -1,4 +1,4 @@
-Do the task of the project "C-Singly linked lists"
+Do the task of the project "C-Bit Manipulations"
 
 TASKS :
 
